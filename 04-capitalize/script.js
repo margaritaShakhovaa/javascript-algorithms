@@ -7,7 +7,19 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
+  // превратили строку в массив
+  let strArray = str.split(' ');
+  console.log(strArray);
+  // создали новый пустой массив с помощью map
+  let newArray = strArray.map(element => {
+    // сложили первый символ элемента (перевели его в верхний регистр) и извлеченный остаток элемента
+    // с помощью slice
+    return element.charAt(0).toUpperCase() + element.slice(1);
+  });
+
+  // превратили массив обратно в строку (указали тип разделителя в параметре метода)
+  let newString = newArray.join(' ');
+  return newString;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
