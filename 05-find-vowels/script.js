@@ -19,7 +19,7 @@ function findVowels(str) {
   vowels.forEach(letter => {
     for (let i = 0; i < str.length; i++) {
       if (str[i] === letter) count++;
-    };
+    }
   });
 
   return count;
