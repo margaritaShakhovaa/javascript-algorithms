@@ -8,7 +8,13 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+  if (n === 0) return 1;
+
+  let fact = 1;
+  for (let i = 1; i <= n; i++) {
+    fact = fact * i;
+  }
+  return fact;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
